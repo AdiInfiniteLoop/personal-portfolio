@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className='w-11/12 max-2-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
       <div>
-      <Image src="/myphoto.webp" alt='' height={100} width={100} className='w-64 rounded-3xl'/>
+      <Image src="/myphoto.webp" alt='' height={1000} width={1000} className='w-64 rounded-3xl'/>
       </div>
       <h3 className='flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
       👋 Hi! I&apos;m <strong>Aditya Pradhan</strong> 
