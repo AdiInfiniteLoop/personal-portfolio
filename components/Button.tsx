@@ -5,7 +5,7 @@ import type { ReactNode } from "react"
 interface ButtonProps {
   href?: string
   onClick?: () => void 
-  children: ReactNode
+  children?: ReactNode
   icon?: string
   className?: string
   download?: boolean
@@ -19,7 +19,7 @@ export function Button({ href, onClick, children, icon, className = "", download
     </>
   )
 
-  const buttonClasses = `font-sans flex items-center justify-between gap-3 px-8 py-3 border border-gray-300 rounded-full transition-colors duration-300 hover:bg-gray-100 ${className}`
+  const buttonClasses = `font-sans flex items-center justify-between gap-3 px-8 py-3 border border-gray-300 rounded-full transition-all duration-300 hover:-translate-y-1 duration-500 hover:bg-gray-100 ${className}`
 
   if (href) {
     return (

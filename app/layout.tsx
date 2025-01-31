@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} ${ovo.className}`}>{children}</body>
+      <body className={`${outfit.className} ${ovo.className} leading-12 overflow-x-hidden`}>{children}</body>
     </html>
   )
 }
