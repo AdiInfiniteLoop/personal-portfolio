@@ -1,11 +1,17 @@
-import React from 'react';
 import Image from 'next/image';
+import {Badge} from "@/components/badge"
 
 const About = () => {
   return (
     <div id="about" className="w-full px-[12%] py-10 ">
-      <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-      <h2 className="text-center text-5xl font-Ovo">About Me</h2>
+        <div className="max-w-3xl mx-auto mb-16">
+          <div className="flex items-center mb-4">
+            <Badge className="text-red-500 border-red-500 mr-3">01</Badge>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Few things about me</h2>
+          </div>
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent mt-4"></div>
+          </div>
+
 
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div className="w-80 rounded-3xl max-w-none">

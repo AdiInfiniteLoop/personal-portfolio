@@ -1,9 +1,67 @@
-import React from 'react'
+import { ProjectCard } from "./projects-card"
+import { Badge } from "../components/badge"
 
-const Projects = () => {
+export interface Project {
+  id: string
+  title: string
+  description: string
+  image: string
+  technologies: string[]
+  github: string
+  demo: string
+}
+
+export const projects: Project[] = [
+  {
+    id: "kizuna",
+    title: "Kizuna",
+    description:
+      "A real-time chat application with instant messaging capabilities, user presence indicators, and end-to-end encryption. Features include message history, file sharing, and responsive design for mobile and desktop users.",
+    image: "/2.png",
+    technologies: ["Next.js", "TypeScript", "Socket.io", "Tailwind CSS", "Supabase", "Redis"],
+    github: "https://github.com/yourusername/kizuna",
+    demo: "https://kizuna-chat.vercel.app",
+  },
+  {
+    id: "authora",
+    title: "Authora",
+    description:
+      "A robust authentication service built using Go with Gin, PostgreSQL, SQLC, Redis, and JWT. It provides a complete authentication flow, including sign-up, login, session management, and token-based authentication with comprehensive security features.",
+    image: "/lock.png",
+    technologies: ["Go", "Gin", "PostgreSQL", "Redis", "JWT", "Docker", "REST API"],
+    github: "https://github.com/yourusername/authora",
+    demo: "https://authora-demo.vercel.app",
+  },
+  {
+    id: "landofeldoria",
+    title: "Land of Eldoria",
+    description:
+      "A 15-level Capture The Flag (CTF) challenge with virtual machines hosted in Azure, featuring various security puzzles and scenarios. Designed to test and improve cybersecurity skills through practical, hands-on challenges in a gamified environment.",
+    image: "/placeholder.svg?height=600&width=1000",
+    technologies: ["Azure", "Linux", "Security", "CTF", "Terraform", "Kubernetes", "Python"],
+    github: "https://github.com/yourusername/land-of-eldoria",
+    demo: "https://eldoria-ctf.com",
+  },
+]
+
+export default function Projects() {
   return (
-    <div>Projects</div>
+    <section className="container py-24 mx-auto" id="projects">
+      <div className="max-w-3xl mx-auto mb-16">
+        <div className="flex items-center mb-4">
+          <Badge className="text-red-500 border-red-500 mr-3">03</Badge>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Some Things I've Built</h2>
+        </div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent mt-4"></div>
+      </div>
+
+      <div className="space-y-32">
+        {projects.map((project, index) => (
+          <ProjectCard key={project.id} project={project} isReversed={index % 2 !== 0} />
+        ))}
+      </div>
+    </section>
   )
 }
 
-export default Projects
+
