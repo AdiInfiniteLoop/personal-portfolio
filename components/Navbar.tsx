@@ -6,8 +6,6 @@ import Image from "next/image"
 import { Button } from "./Button"
 
 import Logo from "@/public/Logo.png"
-import moonIcon from "../assets/halfmoon.svg"
-import sunIcon from "../assets/sun.svg"
 import downloadIcon from "../assets/download.svg"
 import menuIcon from "../assets/hamburger.svg"
 import closeIcon from "../assets/cross.svg"
@@ -21,20 +19,8 @@ const navItems = [
 
 export default function Navbar() {
   const sidebarRef = useRef<HTMLDivElement>(null)
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
   const [isVisible, setIsVisible] = useState<boolean>(true)
   const [lastScrollY, setLastScrollY] = useState<number>(0)
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme")
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-
-    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-      setIsDarkMode(true)
-      document.documentElement.classList.add("dark")
-    }
-  }, [])
-
   useEffect(() => {
     const controlNavbar = () => {
       const currentScrollY = window.scrollY
@@ -62,17 +48,6 @@ export default function Navbar() {
     }
   }
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-    if (isDarkMode) {
-      document.documentElement.classList.remove("dark")
-      localStorage.setItem("theme", "light")
-    } else {
-      document.documentElement.classList.add("dark")
-      localStorage.setItem("theme", "dark")
-    }
-  }
-
   return (
     <nav
       className={`w-full fixed px-5 lg:px-8 xl:px-[8%] flex items-center justify-between shadow-sm md:shadow-none z-50 bg-white dark:bg-gray-900 transition-all duration-300 ${
@@ -90,7 +65,7 @@ export default function Navbar() {
         ))}
       </ul>
       <div className="flex items-center gap-4">
-        <Button onClick={toggleDarkMode} icon={isDarkMode ? sunIcon : moonIcon} className="p-2 border-none"></Button>
+        <Button  className="p-2 border-none"></Button>
         <Button
           href="https://drive.google.com/file/d/1ReUirxZCk3QQW2FloXTn2U1ggVipRCPB/view?usp=sharing"
           icon={downloadIcon}
