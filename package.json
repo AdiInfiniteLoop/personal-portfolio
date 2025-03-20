@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && git add . && git commit -m 'Deploy Pipeline' && git push origin gh-pages",
     "start": "next start",
     "lint": "next lint"
   },
