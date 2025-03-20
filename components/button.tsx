@@ -9,7 +9,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
 }
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const ButtonNew = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, variant = "default", size = "default", asChild = false, className, ...props }, ref) => {
     const Comp = asChild ? "span" : "button"
 
@@ -36,6 +36,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   },
 )
 
-Button.displayName = "Button"
+ButtonNew.displayName = "ButtonNew"
 
 
