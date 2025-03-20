@@ -48,7 +48,7 @@ export default function Projects() {
       <div className="max-w-3xl mx-auto mb-16">
         <div className="flex items-center mb-4">
           <Badge className="text-red-500 border-red-500 mr-3">03</Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Some Things I've Built</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Some Things I&apos;ve Built</h2>
         </div>
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent mt-4"></div>
       </div>
