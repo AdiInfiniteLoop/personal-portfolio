@@ -61,12 +61,12 @@ export function ProjectCard({ project, isReversed = false }: ProjectCardProps) {
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
-            <Button variant="outline" size="icon" asChild>
-              <Link href={project.demo} target="_blank" rel="noopener noreferrer">
+            {project.demo &&             <Button variant="outline" size="icon" asChild>
+              <Link href={project?.demo} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
                 <span className="sr-only">Live Demo</span>
               </Link>
-            </Button>
+            </Button>}
           </div>
         </div>
       </div>

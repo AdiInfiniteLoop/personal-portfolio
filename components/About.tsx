@@ -32,10 +32,7 @@ const About = () => {
             intrigued by <strong>problem-solving and algorithmic challenges</strong>, which led me to dive into 
             competitive programming and full-stack development.
             <br /><br />
-            Currently, I am a <strong>Computer Science student</strong> at <strong>The National Institute of Engineering, Mysore</strong> 
-            (CGPA: <strong>9.47</strong>), where I continue honing my skills in software engineering, web development, 
-            and open-source contributions.
-            <br /><br />
+
             I have worked as a <strong>Frontend Engineer Intern</strong> at <strong>Minervaa</strong>, building scalable web applications, 
             and as the <strong>Technical Co-Lead</strong> at <strong>OWASP NIE</strong>, where I organized cybersecurity events and led 
             open-source projects. My dedication to coding also reflects in my competitive programming journey, where 
@@ -48,16 +45,16 @@ const About = () => {
               <p>
                 🎓 <strong>Bachelor of Engineering</strong> in Computer Science<br />
                 The National Institute of Engineering, Mysore<br />
-                <strong>CGPA:</strong> 9.47
+                <strong>CGPA:</strong> 9.45
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-xl mb-2">Technologies</h3>
               <p>
-                ⚡ <strong>Languages:</strong> TypeScript, C++, Python <br />
-                ⚡ <strong>Frontend:</strong> Next.js, Tailwind CSS <br />
-                ⚡ <strong>Backend:</strong> Node.js, PostgreSQL, MongoDB<br />
+                ⚡ <strong>Languages:</strong> TypeScript, C++, Go, Python <br />
+                ⚡ <strong>Frontend:</strong> Next.js, Recoil, Zustand, Tailwind CSS <br />
+                ⚡ <strong>Backend:</strong> Node.js, Gin , PostgreSQL, MongoDB<br />
               </p>
             </div>
           </div>

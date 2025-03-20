@@ -9,18 +9,33 @@ import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects"
 import ProjectsGrid from "@/components/Noteworthy-projects"
+import FadeInOnScroll from "@/components/FadeInOnScroll"
 
 export default function Home() {
   return (
     <>
-     <Navbar/> 
-     <Hero/>
-     <About/>
-     <Experience/>
-      <Projects/>
-      <ProjectsGrid/>
-     <EarthCanvas/>
-     <Contact/>
+      <Navbar/> 
+      <FadeInOnScroll>
+        <Hero/>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll>
+        <About/>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <Experience/>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <Projects/>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <ProjectsGrid/>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+
+        <EarthCanvas/>
+        <Contact/>
+      </FadeInOnScroll>
     </>
-      )
+  )
 }

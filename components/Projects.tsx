@@ -8,7 +8,7 @@ export interface Project {
   image: string
   technologies: string[]
   github: string
-  demo: string
+  demo?: string
 }
 
 export const projects: Project[] = [
@@ -17,30 +17,28 @@ export const projects: Project[] = [
     title: "Kizuna",
     description:
       "A real-time chat application with instant messaging capabilities, user presence indicators, and end-to-end encryption. Features include message history, file sharing, and responsive design for mobile and desktop users.",
-    image: "/2.png",
-    technologies: ["Next.js", "TypeScript", "Socket.io", "Tailwind CSS", "Supabase", "Redis"],
-    github: "https://github.com/yourusername/kizuna",
-    demo: "https://kizuna-chat.vercel.app",
+    image: "/kizuna.jpeg",
+    technologies: ["React", "TypeScript", "Socket.io", "Tailwind CSS", "MongoDB", "NodeJS", "Redis"],
+    github: "https://github.com/AdiInfiniteLoop/Kizuna",
+    demo: "https://kizuna-ten.vercel.app",
   },
   {
     id: "authora",
     title: "Authora",
     description:
       "A robust authentication service built using Go with Gin, PostgreSQL, SQLC, Redis, and JWT. It provides a complete authentication flow, including sign-up, login, session management, and token-based authentication with comprehensive security features.",
-    image: "/lock.png",
+    image: "/authora.jpeg",
     technologies: ["Go", "Gin", "PostgreSQL", "Redis", "JWT", "Docker", "REST API"],
-    github: "https://github.com/yourusername/authora",
-    demo: "https://authora-demo.vercel.app",
+    github: "https://github.com/AdiInfiniteLoop/Authora",
   },
   {
     id: "landofeldoria",
     title: "Land of Eldoria",
     description:
       "A 15-level Capture The Flag (CTF) challenge with virtual machines hosted in Azure, featuring various security puzzles and scenarios. Designed to test and improve cybersecurity skills through practical, hands-on challenges in a gamified environment.",
-    image: "/placeholder.svg?height=600&width=1000",
-    technologies: ["Azure", "Linux", "Security", "CTF", "Terraform", "Kubernetes", "Python"],
-    github: "https://github.com/yourusername/land-of-eldoria",
-    demo: "https://eldoria-ctf.com",
+    image: "/landofeldoria.jpeg",
+    technologies: ["Azure", "Linux", "Security", "CTF"],
+    github: "https://github.com/AdiInfiniteLoop/CTF",
   },
 ]
 

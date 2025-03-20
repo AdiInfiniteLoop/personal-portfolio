@@ -2,43 +2,38 @@ import { Button } from "@/components/button";
 import Link from "next/link"
 
 const projects = [
+  { "title": "Brevity-bot", 
+    "description": "An AI-powered article summarizer built using React and TypeScript, integrated with Rapid API for fetching content and Redux for state management, providing concise and accurate summaries.", 
+    "tech": ["React", "TypeScript", "Rapid API", "Redux", "TailwindCSS"] },
   {
-    title: "RustyDNS",
-    description:
-    "Built a DNS server from scratch using Rust and the optimized server to handle DNS requests efficiently, ensuring quick response times with robust security measures.",
-    tech: ["Rust", "Bash", "Scripting"],
+    "title": "SOS-alert",
+    "description": "A robust CRUD application built with Go, PostgreSQL, Goose for database migrations, and Docker for containerization, ensuring efficient and scalable management of alert data.",
+    "tech": ["Go", "PostgreSQL", "Goose", "Docker"]
   },
   {
-    title: "RMS backend in Go",
-    description:
-    "This is the backend of Restaurant Management System (RMS) in Go. Full CRUD functionality is implemented in Go including JWT authentication. It uses Gin for routing and MongoDB for storing the data.",
-    tech: ["Golang", "MongoDB"],
+    "title": "Posta-gresa",
+    "description": "A repository focusing on PostgreSQL migrations, providing seamless version control and schema management to maintain data integrity.",
+    "tech": ["Go", "PostgreSQL", "Goose", "Docker"]
   },
   {
-    title: "BotterGo",
-    description:
-    "An NLP featured slack bot using Go using WIT for NLP and WolframAlpha as knowledge repository. This Go server connects WIT, WolframAlpha and Slack platform.",
-    tech: ["Golang"],
+    "title": "LetsGO",
+    "description": "An educational resource designed to summarize key concepts of the Go programming language, providing concise and clear explanations",
+    "tech": ["Go"]
   },
   {
-    title: "CleanRoute",
-    description:
-    "A routing tool with forecasting capability for calculating the air pollution exposure and energy consumption of a route and utilizing this information to show the LEAP (Least Exposure to Air Pollution) and LCO2 (Least Carbon Emission) routes.",
-    tech: ["Golang", "Python", "JavaScript", "Machine Learning"],
+    "title": "U-I",
+    "description": "A website designed for the NGO 'UI,' focusing on providing education to underprivileged second-generation learners through interactive content and learning resources.",
+    "tech": ["React", "JavaScript", "TailwindCSS"]
   },
   {
-    title: "DAO inspired by Compound",
-    description:
-    "An implementation of a DAO inspired by Compound. This is a 100% on-chain voting and on-chain governance DAO. This is the hardhat repository.",
-    tech: ["Solidity", "Hardhat", "JavaScript"],
+    "title": "Cine-sphere",
+    "description": "A basic movie search application developed with JavaScript and Next.js, allowing users to explore and search movies with a simple and interactive interface.",
+    "tech": ["JavaScript", "NextJS", "Motion", "TailwindCSS"]
   },
-  {
-    title: "DLottery",
-    description:
-    "A trustless and completely verifiable lottery system making use of blockchain technology. Users can enter lottery by paying the entry fees and after a fix time, randomly a winner is chosen and sum of money is transferred to the winner.",
-    tech: ["Golang"],
-  },
+
 ];
+
+
 
 const ProjectsGrid: React.FC = () => {
   return (
@@ -68,13 +63,7 @@ const ProjectsGrid: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-8">
-          <Link href='/archive'>
-            <Button className="bg-red-500 hover:bg-red-700 text-white px-6 py-2 rounded-full hover:-translate-y-1 transition duration-300">
-              Show More
-            </Button>
-          </Link>
-        </div>
+
       </div>
     </section>
   );
