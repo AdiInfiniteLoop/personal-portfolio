@@ -36,6 +36,6 @@ export const ButtonNew = forwardRef<HTMLButtonElement, ButtonProps>(
   },
 )
 
-export default ButtonNew
+ButtonNew.displayName = "ButtonNew"
 
 
