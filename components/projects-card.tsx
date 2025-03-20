@@ -3,8 +3,8 @@ import Link from "next/link"
 import { ExternalLink, Github } from "lucide-react"
 import { Badge } from "../components/badge"
 import { Card } from "../components/card"
-import { ButtonNew } from "../components/button"
-import type { Project } from "./page"
+import {Button}  from "./Button"
+import type { Project } from "./Projects"
 
 interface ProjectCardProps {
   project: Project
@@ -55,19 +55,19 @@ export function ProjectCard({ project, isReversed = false }: ProjectCardProps) {
           </div>
 
           <div className="flex gap-4 mt-4">
-            <ButtonNew variant="outline" size="icon" asChild>
+            <Button>
               <Link href={project.github} target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Link>
-            </ButtonNew>
+            </Button>
             {project.demo &&           
-              <ButtonNew variant="outline" size="icon" asChild>
+              <Button>
               <Link href={project?.demo} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
                 <span className="sr-only">Live Demo</span>
               </Link>
-            </ButtonNew>}
+            </Button>}
           </div>
         </div>
       </div>
