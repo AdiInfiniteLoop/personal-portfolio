@@ -10,6 +10,9 @@ const ovo = Ovo({ subsets: ['latin'], weight: ["400"] })
 export const metadata: Metadata = {
   title: 'Personal Portfolio - Aditya Pradhan',
   description: 'personal portfolio',
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
 
 export default function RootLayout({
