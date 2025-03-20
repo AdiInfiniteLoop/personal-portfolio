@@ -4,7 +4,7 @@ import { cn } from "../lib/utils"
 interface BadgeProps {
   children: React.ReactNode
   variant?: "default" | "secondary" | "outline"
-  className?: string
+  className?: string | boolean
 }
 
 export function Badge({ children, variant = "default", className }: BadgeProps) {
