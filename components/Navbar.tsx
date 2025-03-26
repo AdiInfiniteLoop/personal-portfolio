@@ -82,12 +82,12 @@ export default function Navbar() {
       {/* Mobile sidebar */}
       <div
         ref={sidebarRef}
-        className="lg:hidden fixed right-0 top-0 bottom-0 w-64 bg-white dark:bg-gray-900 transition-transform duration-300 transform translate-x-full z-50"
+        className="lg:hidden fixed right-0 top-0 bottom-0 w-full bg-white dark:bg-gray-900 transition-transform duration-300 transform translate-x-full z-50"
       >
         <Button onClick={() => toggleSidebar(false)} className="absolute right-8 top-8 p-2 border-none">
           <Image src={closeIcon || "/placeholder.svg"} alt="Close" className="w-6" />
         </Button>
-        <ul className="flex flex-col gap-6 p-8 mt-20">
+        <ul className="flex flex-col gap-6 p-8 mt-20 bg-white  h-screen">
           {navItems.map((item) => (
             <li
               key={item.href}
