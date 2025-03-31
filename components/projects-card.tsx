@@ -14,7 +14,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, isReversed = false }: ProjectCardProps) {
   return (
     <div
-      className={`relative grid grid-cols-1 gap-8 ${isReversed ? "md:grid-cols-[1fr_1.5fr]" : "md:grid-cols-[1.5fr_1fr]"}`}
+      className={`relative grid m-4  grid-cols-1 gap-8 ${isReversed ? "md:grid-cols-[1fr_1.5fr]" : "md:grid-cols-[1.5fr_1fr]"}`}
     >
       {/* Project Image */}
       <div
@@ -38,7 +38,6 @@ export function ProjectCard({ project, isReversed = false }: ProjectCardProps) {
       >
         <div className="space-y-4 max-w-md">
           <div>
-            <p className="text-red-500 font-mono mb-1">Featured Project</p>
             <h3 className="text-2xl font-bold">{project.title}</h3>
           </div>
 
